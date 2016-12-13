@@ -27,8 +27,11 @@ You're now ready to create blogs !
 ## How to create an empty blog
 
 In a terminal window, where you want to create your blog directory, type:
+
 ``` abe create myBlog ```
+
 ``` cd myBlog ```
+
 ``` abe serve -i ```
 
 A directory named myBlog is now created and ready, and the command ``` abe serve ``` launches a web server on port 3000 and start your browser on your blog.
