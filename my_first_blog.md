@@ -80,7 +80,37 @@ You see 3 attributes:
 
 Once you're ready, dynamize your template with a dynamic image (type="image") and a rich text (type="rich") and look at the changes.
 
-Your first Abe template has been dynamized i no time ! Congratz !
+Your first Abe template has been dynamized in no time ! Congratz !
 
 ## How to link your blog content between your pages
 
+Now that you know how to dynamize a content. It's time to see another Abe tag: the Abe type "data". With this type, you'll be able to get content from other articles (and even from web services but we'll see it later).
+
+### Pre-requisites
+- Create another template which will be an index template: A template which displays content from others articles, like in a homepage.
+
+### Usage
+
+- Create a new article named "index" (or whatever you want) and using your new template.
+- Open you template in editor, and at the beginning of your template (this is not a mandatory location. You can put your abe tag wherever you want, but we advice you to put types "data" at the beginning of your templates for the sake of readability).
+- Add this Abe tag: ``` {{abe type="data" key="articles" source="select title from / where `abe_meta.template`=`my_cool_template`" editable="false"}}
+- Save your template, refresh your browser
+
+You don't see anything :) This is what we want. But let's have a look at this tag. This tag is a "data" type with the following attributes:
+- type="data" 
+- key="articles" this is a name we give to this data tag
+- source="select title from / select title from / where `abe_meta.template`=`my_cool_template`" We select the title of every content made with the template "my_cool_template" in our blog (from /).
+- editable="false" This attribute tells Abe not to display the content in the left editor. This is the reason why we don"t see anything in the left part.
+
+Adding such a tag is very powerful: It gives you the ability to grab content and put the result in a key (here it's "articles") which you'll use later in the template.
+
+Now that you have the content, it's time to use it:
+- In your html editor, localize the section where you want to display the titles of your articles found and put this content: ``` {{#each articles}} {{title}} {{/each}} ```. Save and refresh your browser. The title of your articles appear !
+
+Notice 2 things: There is no Abe tag. The tags you use are regular handlebars tags, a templating language widely used on the planet. These tags will parse your articles and for each article, will display the title.
+
+Hooray ! You have created a template with dynamic content and know how to grab contents from other articles ot use it in another template. You're ready for your first blog !
+
+## Publish your blog on the web
+
+It's time to publish your website to the world ! 
