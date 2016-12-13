@@ -15,7 +15,7 @@ The courses are divided into 3 parts. Each one corresponding to a profile.
 
 # Abe as a template designer
 
-- My first blog (2 templates)
+- My first blog
 - I create my blog with advanced features
 - Using plugins
 - Abe with a dynamic website
