@@ -58,10 +58,29 @@ Create a new content:
 - Click on "create"
 
 You'll see the Editor:
-
 The editor is split into 2 parts:
 - Left side: A form containing your content data is displayed
 - right side: Your template appears !
 
 ## How to make your template dynamic with text, image and rich content
+It's time to play !
+Now that you have prepared a template for Abe, you'll make him dynamic. For that step, you'll need and editor (Sublime, Eclipse, Vim, ...)
+- Open you template in your favorite HTML editor
+- Localize a text area you want to make dynamic. Replace the content with an abe tag: ``` {{abe type="text" key="title" desc="The title"}} ```
+- Save your template
+- Refresh your browser, you'll see on the left a text input. If you enter some text, this text will dynamically appear on the right. 
+
+This is your first Abe tag. Congratz !
+
+Let's analyze this tag. A abe tag always start with ```{{abe``` 
+You see 3 attributes:
+- type: This express the kind of content you want to display, It could be text, image, rich, ...
+- key: It give an id (or key) to every abe tag you create. This key will make possible to call these tags in other parts of your blog (we'll see it later).
+- desc: It displays a description on the left part of your editor, helping the contributor.
+
+Once you're ready, dynamize your template with a dynamic image (type="image") and a rich text (type="rich") and look at the changes.
+
+Your first Abe template has been dynamized i no time ! Congratz !
+
+## How to link your blog content between your pages
 
