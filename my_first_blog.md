@@ -33,5 +33,14 @@ In a terminal window, where you want to create your blog directory, type:
 
 A directory named myBlog is now created and ready, and the command ``` abe serve ``` launches a web server on port 3000 and start your browser on your blog.
 
->> If you want to launch your blog on another port, do ```abe serve -p #port_number```
+> If you want to launch your blog on another port, do ```abe serve -p #port_number```
+
+In your browser, this page is displayed:
+
+The block on the left side gives you the ability to create content. But before being able to create content, you'll need a template. Any HTML template can be used.
+
+## How to add a template in Abe
+
+Abe uses regular HTML templates. You can grab or create any HTML5 template to create your blog. For a template to be able to work inside Abe, you'll to make sure of 2 things:
+- All the assets 
 
